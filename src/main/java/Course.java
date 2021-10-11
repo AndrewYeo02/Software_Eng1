@@ -6,6 +6,8 @@ public class Course {
     private DateTime startDate, endDate;
     private String courseName;
     private List<Student> students;
+    private List<Module> modules;
+
 
 
     public Course(String courseName, DateTime startDate, DateTime endDate){
@@ -13,10 +15,11 @@ public class Course {
         this.startDate = startDate;
         this.endDate = endDate;
         this.students = new ArrayList<Student>();
+        this.modules = new ArrayList<Module>();
     }
 
     //Create getters and setters methods
-    public String getCourseName(){
+    public String getCourse(){
         return courseName;
     }
     public void setCourseName(String courseName){
@@ -32,6 +35,14 @@ public class Course {
     }
     public void add(Student student){
         students.add(student);
+    }
+    public List getModules(){
+        return modules;
+    }
+
+    public void setModules(Module module_1, Module module_2){
+        modules.add(module_1);
+        modules.add(module_2);
     }
 
 

@@ -1,16 +1,20 @@
+import java.util.List;
+import java.util.ArrayList;
 public class Student{
     private String studentName;
     private int studentAge;
     private String DOB;
     private int ID;
     private String userName;
-
+    private Course course;
+    private List<Module> modules;
 
     public Student(String studentName, int studentAge, String DOB, int ID ){
         this.studentName = studentName;
         this.studentAge = studentAge;
         this.DOB = DOB;
         this.ID = ID;
+        this.modules = new ArrayList<Module>();
     }
     //Create Getter and Setter Methods
     public Student(String studentName){
@@ -56,6 +60,24 @@ public class Student{
     public void setUserName(String userName){
 
         this.userName = userName;
+    }
+
+    public Course getCourse(){
+        return course;
+    }
+
+    public void setCourses(Course course){
+        this.course = course;
+    }
+
+    public List getModules(){
+        return modules;
+    }
+    public void setModules(List<Module> modules){
+        this.modules = modules;
+    }
+    public void addModules(Module module_1){
+        modules.add(module_1);
     }
 
 
