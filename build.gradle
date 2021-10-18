@@ -17,9 +17,6 @@ dependencies {
 
 }
 
-test {
-    useJUnitPlatform()
-}
 
 tasks.withType(Test){
     testLogging{
