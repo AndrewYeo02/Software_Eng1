@@ -48,9 +48,8 @@ public class StudentTest {
     @Test
     public void test_module() {
         student_1.addModules(module_1);
-        Module correct = new Module("CT417");
         List<Module> current= student_1.getModules();
-        assertEquals("pass",current.contains(correct));
+        assertEquals("CT123",current.get(0).getName());
     }
 
 
