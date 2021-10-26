@@ -30,6 +30,8 @@ public class Course {
     public List<Student> getListStudents(){
         return students;
     }
+    public void setListModules(List<Module> modules){this.modules = modules;}
+
     public void setListStudent(List<Student> students){
         this.students = students;
     }
@@ -41,7 +43,6 @@ public class Course {
         return modules;
     }
 
-    public void setListModules(List<Module> modules){this.modules = modules;}
 
 
 

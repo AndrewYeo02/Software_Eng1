@@ -38,6 +38,9 @@ public class Module {
     public List<Course> getListCourse(){
         return courses;
     }
+    public void setCourseList(List<Course> courses){
+        this.courses = courses;
+    }
     public void addCourses(Course course_s){
         courses.add(course_s);
     }
