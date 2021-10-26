@@ -27,7 +27,7 @@ public class Module {
     public List<Student> getListStudents(){
         return students;
     }
-    public void setListStudent(List<Student> students){
+    public void setListStudent(ArrayList<Student> students){
 
         this.students = students;
     }
