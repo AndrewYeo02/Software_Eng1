@@ -3,7 +3,7 @@ import java.util.*;
 public class Module {
     private String moduleName;
     private int moduleID;
-    private ArrayList<Student> students;
+    private List<Student> students;
     private List<Course> courses;
 
     public Module(String moduleName){
@@ -24,10 +24,10 @@ public class Module {
     public void setID(int moduleID){
         this.moduleID = moduleID;
     }
-    public ArrayList<Student> getListStudents(){
+    public List<Student> getListStudents(){
         return students;
     }
-    public void setListStudent(ArrayList<Student> students){
+    public void setListStudent(List<Student> students){
 
         this.students = students;
     }
