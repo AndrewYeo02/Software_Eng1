@@ -17,10 +17,6 @@ public class Student{
         this.modules = new ArrayList<Module>();
     }
     //Create Getter and Setter Methods
-    public Student(String studentName){
-
-        this.studentName = studentName;
-    }
     public String getSName(){
 
         return studentName;

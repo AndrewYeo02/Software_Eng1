@@ -21,12 +21,7 @@ public class StudentTest {
     public void setUp() throws Exception {
         student_1 = new Student("AndrewYeo", 24, "07-04-1998", 18);
         student_2 = new Student("DianaQian", 23, "10-01-1999", 19284498);
-
         module_1 = new Module("CT123");
-
-
-       // module_2= new Module( "CT417");
-
         course_1 = new Course("4BCT1", new DateTime("2021-09-01"), new DateTime("2024-05-22"));
     }
 
