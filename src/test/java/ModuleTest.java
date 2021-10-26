@@ -1,12 +1,11 @@
-//import org.junit.jupiter.api.Test;
-//import static org.junit.jupiter.api.Assertions.*;
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.Assert.*;
+
 import java.util.List;
 
-public class StudentTest {
+import static org.junit.Assert.assertEquals;
 
+public class ModuleTest {
     private Student student_1;
     private Course course_1;
     private Module module_1;
@@ -19,10 +18,10 @@ public class StudentTest {
     }
 
     @Test
-    public void testStudentUsername() {
-        String username = "AndrewYeo18";
-        String testUsername = student_1.getUserName();
-        assertEquals("pass",username, testUsername);
+    public void testModuleName() {
+        String moduleName = "AndrewYeo18";
+        String testModuleName = module_1.getName();
+        assertEquals("pass",moduleName, testModuleName);
     }
 
     @Test
@@ -39,13 +38,4 @@ public class StudentTest {
         List<Module> current= student_1.getModules();
         assertEquals("CT123",current.get(0).getName());
     }
-
-
-
-
-
-
-
-
-
 }
