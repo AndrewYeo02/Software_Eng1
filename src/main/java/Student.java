@@ -8,6 +8,7 @@ public class Student{
     private String userName;
     private Course course;
     private List<Module> modules;
+    private List <Course> courses;
 
     public Student(String studentName, int studentAge, String DOB, int ID ){
         this.studentName = studentName;
@@ -72,6 +73,8 @@ public class Student{
     public void setModules(List<Module> modules){
         this.modules = modules;
     }
+    public List getCourses() {return courses;}
+    public void setCourses(List<Course> courses){this.courses = courses;}
     public void addModules(Module module_1){
         modules.add(module_1);
     }

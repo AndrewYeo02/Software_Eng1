@@ -43,7 +43,9 @@ public class Course {
         return modules;
     }
 
-
+    public void addModule(Module module){
+        modules.add(module);
+    }
 
 
     public void setModules(Module module_1, Module module_2){

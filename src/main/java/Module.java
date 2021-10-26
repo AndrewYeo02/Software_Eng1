@@ -28,7 +28,6 @@ public class Module {
         return students;
     }
     public void setListStudent(List<Student> students){
-
         this.students = students;
     }
 
