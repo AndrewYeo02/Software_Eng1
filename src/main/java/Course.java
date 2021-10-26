@@ -39,6 +39,8 @@ public class Course {
     public List getModules(){
         return modules;
     }
+    public void setListModule(List<Module> modules){this.modules = modules;}
+
 
     public void setModules(Module module_1, Module module_2){
         modules.add(module_1);
