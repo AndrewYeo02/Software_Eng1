@@ -31,17 +31,17 @@ public class Module {
         this.students = students;
     }
 
-    public void add(Student student_s){
-        students.add(student_s);
-    }
     public List<Course> getListCourse(){
         return courses;
     }
+
     public void setCourseList(List<Course> courses){
         this.courses = courses;
     }
-    public void addCourses(Course course_s){
-        courses.add(course_s);
+
+    @Override
+    public String toString() {
+        return moduleName;
     }
 }
 
