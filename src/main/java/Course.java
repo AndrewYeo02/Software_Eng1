@@ -25,20 +25,22 @@ public class Course {
     public void setCourseName(String courseName){
         this.courseName = courseName;
     }
-
     //create method to store the list of student
+
     public List<Student> getListStudents(){
         return students;
     }
     public void setListStudent(List<Student> students){
         this.students = students;
     }
+
     public void add(Student student){
         students.add(student);
     }
     public List<Module> getModules(){
         return modules;
     }
+
     public void setListModules(List<Module> modules){this.modules = modules;}
 
 
