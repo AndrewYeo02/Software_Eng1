@@ -27,6 +27,11 @@ public class Module {
     public List<Student> getListStudents(){
         return students;
     }
+    public void setListStudent(List<Student> students){
+
+        this.students = students;
+    }
+
     public void add(Student student_s){
         students.add(student_s);
     }
