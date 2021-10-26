@@ -10,10 +10,10 @@ public class Course {
 
 
 
-    public Course(String courseName, DateTime startDate, DateTime endDate){
+    public Course(String courseName, String startDate, String endDate){
         this.courseName = courseName;
-        this.startDate = startDate;
-        this.endDate = endDate;
+        this.startDate = DateTime.parse(startDate);
+        this.endDate = DateTime.parse(endDate);
         this.students = new ArrayList<Student>();
         this.modules = new ArrayList<Module>();
     }

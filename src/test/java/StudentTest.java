@@ -22,7 +22,7 @@ public class StudentTest {
         student_1 = new Student("AndrewYeo", 24, "07-04-1998", 18);
         student_2 = new Student("DianaQian", 23, "10-01-1999", 19284498);
         module_1 = new Module("CT123");
-        course_1 = new Course("4BCT1", new DateTime("2021-09-01"), new DateTime("2024-05-22"));
+        course_1 = new Course("4BCT1","2021-09-01", "2024-05-22");
     }
 
     @Test
@@ -35,7 +35,7 @@ public class StudentTest {
     @Test
     public void testStudentCourse() {
         student_1.setCourses(course_1);
-        Course testCourse =  new Course("4BCT1", new DateTime("2021-09-01"), new DateTime("2024-05-22"));
+        Course testCourse =  new Course("4BCT1", "2021-09-01", "2024-05-22");
         Course course = student_1.getCourse();
         assertEquals("pass", course.getCourse(), testCourse.getCourse());
     }
