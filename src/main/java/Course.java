@@ -36,10 +36,11 @@ public class Course {
     public void add(Student student){
         students.add(student);
     }
-    public List getModules(){
+    public List<Module> getModules(){
         return modules;
     }
-    public void setListModule(List<Module> modules){this.modules = modules;}
+    public void setListModules(List<Module> modules){this.modules = modules;}
+
 
 
     public void setModules(Module module_1, Module module_2){
