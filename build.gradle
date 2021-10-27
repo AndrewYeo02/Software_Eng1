@@ -17,7 +17,6 @@ dependencies {
 
 }
 
-
 tasks.withType(Test){
     testLogging{
         exceptionFormat "full"

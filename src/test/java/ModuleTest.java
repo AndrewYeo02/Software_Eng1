@@ -19,7 +19,7 @@ public class ModuleTest {
 
     @Test
     public void testModuleName() {
-        String moduleName = "AndrewYeo18";
+        String moduleName = "CT123";
         String testModuleName = module_1.getName();
         assertEquals("pass",moduleName, testModuleName);
     }

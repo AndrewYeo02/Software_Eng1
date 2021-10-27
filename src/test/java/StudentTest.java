@@ -22,7 +22,7 @@ public class StudentTest {
     public void testStudentUsername() {
         String username = "AndrewYeo18";
         String testUsername = student_1.getUserName();
-        assertEquals("pass",username, testUsername);
+        assertEquals("pass", testUsername,username);
     }
 
     @Test

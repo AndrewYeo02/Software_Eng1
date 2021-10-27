@@ -73,9 +73,13 @@ public class Student{
     public void setModules(List<Module> modules){
         this.modules = modules;
     }
-    public List getCourses() {return courses;}
-    public void setCourses(List<Course> courses){this.courses = courses;}
-    public void addModules(Module module_1){
+    public List getCourses() {
+        return courses;
+    }
+    public void setCourses(List<Course> courses){
+        this.courses = courses;}
+    public void addModules(Module module_1)
+    {
         modules.add(module_1);
     }
 
